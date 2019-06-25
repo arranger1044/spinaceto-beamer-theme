@@ -1,0 +1,102 @@
+%
+% Beamer theme by antonio vergari <arranger1044[aT]aim[DoT]com>
+% based on the LaTeX-Beamer package
+% Part of the beamer theme enziteto (previously known as lacamlisciotheme)
+% 
+% This program can be redistributed and/or modified under the terms
+% of the GNU Public License, version 3.
+% 
+% 
+\ProvidesPackage{beamerfontthemeenziteto}[2015/06/02]
+
+%
+% \usepackage{biblatex}
+\usepackage[no-math]{fontspec}
+
+\mode<presentation>
+
+% \usefonttheme{default}
+\usefonttheme{professionalfonts}
+\usefonttheme{serif}
+\setmainfont[Scale=0.80,Ligatures=TeX]{Open Sans}
+
+
+% titles
+% \setbeamerfont{headline}{series=\bfseries}
+% \setbeamerfont{frametitle}{series=\bfseries}
+
+\setbeamerfont{subtitle} {family=\fontspec{Open Sans Semibold}}
+% \setbeamerfont{author} {family=\fontspec{Open Sans Semibold},
+% size=\tiny}
+\setbeamerfont{author} {family=\fontspec{Open Sans Semibold},
+  size=\fontsize{8}{5}}
+\setbeamerfont{authormail} {family=\fontspec{Open Sans Italic}, size=\fontsize{5}{6}}
+\setbeamerfont{institute} {family=\fontspec{Open Sans}, size=\fontsize{5}{6}, series=\bfseries}
+\setbeamerfont{date} {family=\fontspec{Open Sans Italic}, size=\tiny}
+
+\setbeamerfont{title} {family=\fontspec{Open Sans Extrabold}, size=\fontsize{25}{30}}
+\setbeamerfont{frametitle} {family=\fontspec{Open Sans Extrabold}}
+\setbeamerfont{framesubtitle} {family=\fontspec{Open Sans}, size=\small, series=\itshape}
+
+% % items
+% \setbeamerfont{itemize/enumerate body} {size=\small}
+% \setbeamerfont{itemize/enumerate subbody} {size=\footnotesize}
+% \setbeamerfont{itemize/enumerate subsubbody} {size=\scriptsize}
+% \setbeamerfont{enumerate item} {size=\tiny, series=\bfseries}
+% \setbeamerfont{enumerate subitem} {size=\Tiny, series=\bfseries}
+
+% % sections
+\setbeamerfont{section name}{family=\fontspec{Open Sans Extrabold}, size=\Large}
+\setbeamerfont{subsection name}{family=\fontspec{Open Sans Extrabold}, size=\Large}
+% \setbeamerfont{section in toc}
+% {parent=structure, size=\scriptsize, series=\bfseries}
+% \setbeamerfont{subsection in toc}
+% {parent=structure, size=\scriptsize, series=\bfseries}
+% \setbeamerfont{section text in toc}
+% {parent=section in toc, size=\normalsize}
+% \setbeamerfont{subsection text in toc}
+% {parent=subsection in toc, size=\scriptsize}
+% \setbeamerfont{section in head/foot}
+% {size=\tiny, series=\bfseries}
+
+% \setbeamerfont{description item} {family=\fontspec{Open Sans Bold}, size=\scriptsize}
+
+\setbeamerfont{background}{family=\fontspec{Open Sans}, size=\scriptsize}
+\setbeamerfont{background canvas}{family=\fontspec{Open Sans}, size=\scriptsize}
+\setbeamerfont{normal text}{family=\fontspec{Open Sans}, size=\scriptsize}
+% % bibliography
+\renewcommand*{\bibfont}{\tiny}
+% \setbeamerfont{bibliography entry author}
+% {size=\tiny, shape=\upshape, series=\bfseries}
+% \setbeamerfont{bibliography entry title}
+% {size=\tiny, shape=\upshape, series=\mdseries}
+% \setbeamerfont{bibliography entry journal}
+% {size=\tiny, shape=\upshape, series=\mdseries}
+% \setbeamerfont{bibliography entry note}
+% {size=\tiny, shape=\upshape, series=\mdseries}
+% \setbeamertemplate{bibliography item}[progressbar]
+
+\setbeamerfont{footnote}{size=\tiny}
+% % miscs
+% \setbeamerfont{block title}
+% {parent={structure, block body}, size=\normalsize, series=\bfseries}
+% \expandafter\let\csname beamerx@\string\emph\endcsname\relax
+% \renewcommand<>\emph[1]{{\only#2{\color{structure.fg}\bfseries}#1}}
+
+%
+% to support LaTex quoting style
+\defaultfontfeatures{Ligatures=TeX}
+
+% two font modes
+\newif\ifsansserif
+
+% \sansseriftrue
+\sansseriffalse
+
+\mode
+<all>
+
+
+
+
+

@@ -1,0 +1,12 @@
+*auto/
+.#*
+*.log
+*.aux
+*.nav
+*.out
+*.bcf
+*.snm
+*.toc
+*.vrb
+*.run.xml
+*.synctex.gz

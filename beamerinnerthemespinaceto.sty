@@ -1,0 +1,217 @@
+% Beamer theme by antonio vergari <arranger1044[aT]aim[DoT]com>
+% based on the LaTeX-Beamer package
+% Part of the beamer theme spinaceto (based on my previous theme enziteto)
+% 
+% This program can be redistributed and/or modified under the terms
+% of the GNU Public License, version 3.
+% 
+% 
+\ProvidesPackage{beamerinnerthemespinaceto}[2018/12/25]
+
+\usepackage{biblatex}
+\usepackage{setspace}
+
+\mode<presentation>
+
+\newcommand{\hbs}[1]{\hspace*{#1\baselineskip}}
+
+\newcommand{\httm}[3][.2]{\ifmmode\mathchoice%
+  {\colorbox{#2}{\hbs{#1}\textcolor{white}{$\displaystyle{#3}$}\hbs{#1}}}%
+  {\colorbox{#2}{\hbs{#1}\textcolor{white}{$\textstyle{#3}$}\hbs{#1}}}%
+  {\colorbox{#2}{\hbs{#1}\textcolor{white}{$\scriptstyle{#3}$}\hbs{#1}}}%
+  {\colorbox{#2}{\hbs{#1}\textcolor{white}{$\scriptscriptstyle{#3}$}\hbs{#1}}}
+  \else{\colorbox{#2}{\hbs{#1}\textcolor{white}{#3\vphantom{\"Aq}$\mathop{\vphantom{\int}}$}\hbs{#1}}}\fi} 
+
+\newcommand{\htt}[2][yellow]{\httm[.1]{#1}{#2}}
+
+\newcommand{\httb}[2][yellow]{\htt[#1]{\ifmmode\mathbf{#2}\else\textbf{#2}\fi}}
+
+% \newcommand{\authorbox}[4][140pt]{\begin{minipage}{#1}{\raggedright\textbf{{%\large
+%           \usebeamerfont{author}
+%           #2}}$\ ^{[#4]}$\\[-12pt]
+%     \scriptsize{\emph{#3}}}\end{minipage}}
+
+\newcommand{\authorbox}[4][140pt]{\begin{minipage}[t]{#1}{\noindent\raggedright\textbf{{%\large
+          \usebeamerfont{author}
+          #2}}\\\noindent
+     \hspace{3pt}\usebeamerfont{authormail}\emph{#3}
+  }\end{minipage}}
+
+\newcommand{\affiliationbox}[5][60pt]{ \parbox[t]{50pt}{\setstretch{.3}\fontsize{3}{1}\begin{minipage}[t]{#1}\vspace{0pt}
+      \raggedright\includegraphics[width=0.98\linewidth]{#2}\end{minipage}
+    %\begin{minipage}[t]{10pt}\vspace{5pt}{\setstretch{.3}\fontsize{3}{1}[#5]}\end{minipage}
+    \\[2pt]
+  % {\footnotesize[#4]}
+  \parbox[t]{100pt}{\setstretch{.3}\fontsize{5}{1}%\linespread{.1}
+    % \renewcommand{\baselinestretch}{.5}
+    \raggedright
+    % \footnotesize
+    {#3}
+    \par
+    %\scriptsize
+    {\emph{#4}}
+    
+    % {#3}
+    
+  }}
+}
+
+
+\defbeamertemplate*{title page}{spinaceto}[1][]
+{
+  \vspace{-10pt}
+  \hfill\begin{minipage}[t]{0.9\linewidth}
+    \vspace{0pt}
+    \hfill\raggedleft
+    \ifdefined\@institutelogo
+    \affiliationbox[\@institutesize]{\@institutelogo}
+    {\ifdefined\@institute\insertinstitute\fi}
+    {\ifdefined\@department\@department\fi}{}
+    \fi
+    \ifdefined\@secondinstitutelogo
+    \affiliationbox[\@secondinstitutesize]{\@secondinstitutelogo}
+    {\ifdefined\@secondinstitute\@secondinstitute\fi}
+    {\ifdefined\@seconddepartment\@seconddepartment\fi}{}
+    \fi
+    \ifdefined\@thirdinstitutelogo
+    \affiliationbox[\@thirdinstitutesize]{\@thirdinstitutelogo}
+    {\ifdefined\@thirdinstitute\@thirdinstitute\fi}
+    {\ifdefined\@thirddepartment\@thirddepartment\fi}{}
+    \fi
+    \ifdefined\@fourthinstitutelogo
+    \affiliationbox[\@fourthinstitutesize]{\@fourthinstitutelogo}
+    {\ifdefined\@fourthinstitute\@fourthinstitute\fi}
+    {\ifdefined\@fourthdepartment\@fourthdepartment\fi}{}
+    \fi
+    \hspace{5pt}
+  \end{minipage}
+  \vspace{10pt}
+  
+  \Large\usebeamerfont{title}\usebeamercolor{title page}\inserttitle\par%\textcolor{lacamlilac}{\inserttitle}\par
+  \vspace{5pt}
+  \small\usebeamerfont{subtitle}\textcolor{lacamlilac}{\insertsubtitle}\par
+  \vspace{15pt}
+
+  \usebeamerfont{author}
+  \insertauthor\par
+  % \authorbox[50pt]{\emph{Antonio Vergari}}{antonio.vergari@tue.mpg.de}{\dag}\hspace{2pt}
+  %   \authorbox[70pt]{Alejandro Molina}{molina@cs.tu-darmstadt.de}{\ddag}\hspace{-5pt}
+  %   \authorbox[50pt]{Robert Peharz}{rp587@cam.ac.uk}{\S}\hspace{2pt}
+  %   \authorbox[70pt]{Zoubin Ghahramani}{zoubin@eng.cam.ac.uk}{\S}\hspace{2pt}
+  %   \authorbox[70pt]{Kristian Kersting}{kersting@cs.tu-darmstadt.de}{\ddag}\hspace{-5pt}
+  %   \authorbox[50pt]{Isabel Valera}{isabel.valera@tue.mpg.de}{\dag}
+    
+  \ifdefined\@gliph
+  \vspace{7pt}
+  \@gliph\par
+  % \vspace{7pt}
+  % \else
+  % \vspace{11pt}
+  \fi
+  \vspace{20pt}
+  \usebeamerfont{date}\insertdate\par
+  
+}
+
+
+\defbeamertemplate*{section page}{spinaceto}[1][]{%
+  \begin{centering}
+    {\usebeamerfont{section name}
+      %\textcolor{lacamdarklilac}{\insertsection}
+      \insertsection
+    % \vskip1em\par
+    % \begin{beamercolorbox}[sep=12pt,center]{part title}
+    %   \usebeamerfont{section title}\insertsection\par
+    % \end{beamercolorbox}
+    % \insertsection
+    }
+  \end{centering}
+}
+
+%
+% FOOTNOTES
+%
+
+%\renewcommand{\footnotesize}{\scriptsize}
+% baed on default footnote template from beamerinnerthemedefault.sty
+\defbeamertemplate*{footnotetext}{spinaceto}{%
+  % \parindent 1em\noindent%
+  \raggedright
+  \tiny
+  % \hbox to 1.8em{\hfil\insertfootnotemark}%
+  \insertfootnotetext\par}
+
+% based on default footnote template from beamerinnerthemedefault.sty
+\defbeamertemplate*{footnotetextmark}{spinaceto}{%
+  % \parindent 1em\noindent%
+  \raggedright
+  \tiny
+  % \hbox to 1.8em{\hfil\insertfootnotemark}
+  \makebox[0cm][l]{\insertfootnotemark}\insertfootnotetext\par}
+
+%\insertfootnotemark~\insertfootnotetext\par}
+\newrobustcmd*{\footfullcitenomarkleft}{%
+  \AtNextCite{%
+    \setbeamertemplate{footnote}{\usebeamertemplate{footnotetext}}%
+    \let\mkbibfootnote\mkbibfootnotetext}%
+  \footfullcite}
+\newrobustcmd*{\footfullcitenomark}{%
+  \AtNextCite{%
+    \let\thefootnote\relax
+    \let\mkbibfootnote\mkbibfootnotetext}%
+  \footfullcite}
+\newrobustcmd*{\footfullciteleft}{%
+  \AtNextCite{%
+    \setbeamertemplate{footnote}{\usebeamertemplate{footnotetextmark}}%
+    \let\mkbibfootnote\mkbibfootnotetext}%
+  \footfullcite}
+\newrobustcmd*{\footnotenomarkleft}{%
+   \setbeamertemplate{footnote}{\usebeamertemplate{footnotetext}}%
+    \let\mkbibfootnote\mkbibfootnotetext
+   \footnotetext}
+
+% better spacing for footnotes
+\def \beamerfoottmplength {0.92\paperwidth}
+\addtobeamertemplate{footnotetext}{\vspace{-126pt}\advance\hsize-1.5cm}{\vspace{6pt}}
+\addtobeamertemplate{footnote}{\vspace{-126pt}\advance\hsize-1.5cm}{\vspace{6pt}}
+\addtobeamertemplate{footnote}{\hsize\beamerfoottmplength}{}
+\addtobeamertemplate{footnotetext}{\hsize\beamerfoottmplength}{}
+
+
+\makeatletter
+% Alternative A: footnote rule
+\renewcommand*{\footnoterule}{\kern -3pt \hrule \@width 2in \kern 8.6pt}
+% Alternative B: no footnote rule
+% \renewcommand*{\footnoterule}{\kern 6pt}
+\makeatother
+
+
+% %
+% % custom citations
+% \setbeamerfont{footnote}{size=\scriptsize}
+% \newcommand{\customcite}[1]{\footnote{\tiny \citeauthor{#1},
+%     \citetitle{#1}, \citeyear{#1}}}
+% \newcommand{\customcitenomark}[1]{\footnotenomarkleft{\tiny
+%     \citeauthor{#1}, \citetitle{#1}, \citeyear{#1}}}
+% \newcommand{\customcitetext}[1]{\footnotenomarkleft{\tiny \citeauthor{#1}, \citetitle{#1}, \citeyear{#1}}}
+
+\setbeamertemplate{bibliography item}{\hspace{10pt}\raise
+  .2ex\hbox{\textcolor{lacamlilac}{$\boldsymbol{\oplus}$}}}
+
+%
+% references enclosed in brackets
+\makeatletter
+\AtEveryCite{%
+\let\bibopenparen=\bibopenbracket%
+  \let\bibcloseparen=\bibclosebracket}
+\makeatother
+
+
+
+\mode
+<all>
+
+
+
+
+

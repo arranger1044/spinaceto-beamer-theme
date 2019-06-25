@@ -1,0 +1,101 @@
+% Beamer theme by antonio vergari <arranger1044[aT]aim[DoT]com>
+% based on the LaTeX-Beamer package
+% Part of the beamer theme spinaceto (based on my previous theme enziteto)
+% 
+% This program can be redistributed and/or modified under the terms
+% of the GNU Public License, version 3.
+% 
+% 
+\ProvidesPackage{beamerouterthemespinaceto}[2018/12/25]
+
+\usepackage{etoolbox}
+
+\mode<presentation>
+
+%
+% using miniframes
+% \useoutertheme[subsection=false, footline=authorinstitutetitle, compress]{miniframes}
+\useoutertheme[subsection=false, footline=authorinstitutetitle]{miniframes}
+
+%
+% increasing top margin
+\setbeamertemplate{headline}{}
+% \addtobeamertemplate{headline}{\vspace{7pt}\hspace{10pt}}{\hspace{10pt}}
+
+
+%
+% Frame title customization
+\defbeamertemplate*{frametitle}{spinaceto}[1][]
+{
+  \vskip25pt%
+  \insertframetitle\par
+  \ifdefined\insertframesubtitle
+  \usebeamerfont{framesubtitle}\insertframesubtitle
+  \fi
+}
+
+\defbeamertemplate*{frametitle}{htt}[2][]
+{
+  \vskip25pt%
+  \htt[#2]{\emph{\insertframetitle}}\par
+  \ifdefined\insertframesubtitle
+  \usebeamerfont{framesubtitle}\insertframesubtitle
+  \fi
+}
+
+\BeforeBeginEnvironment{frame}{%
+  \setbeamertemplate{frametitle}[spinaceto]%
+}
+
+\makeatletter
+\define@key{beamerframe}{htt}[lacamdarklilac]{%
+  \setbeamertemplate{frametitle}[htt]{#1}%
+}
+\makeatother
+
+%
+% Footline
+\defbeamertemplate*{footline}{spinaceto}[1][]
+{
+  \vspace{-150pt}
+  % \hspace{20pt}
+  % \tiny
+  % % \begin{minipage}[t]{50pt}
+  % %   \vspace{10pt}
+  % %   Antonio Vergari
+  % % \end{minipage}
+  % \begin{minipage}[t]{65pt}
+  %   \vspace{5pt}
+  %   \includegraphics[width=22pt]{Figures/unibaba}
+  %   \hspace{4pt}
+  %   \includegraphics[width=31pt]{Figures/lacam}
+  % \end{minipage}
+  % \ifsansserif
+  % \hspace{32pt}% for theinhardt
+  % \else
+  % \hspace{37pt}%fot guardian
+  % \fi
+  % \begin{minipage}[t]{80pt}
+  %   \vspace{10pt}
+  %   \textbf{Università degli Studi di Bari}\par
+  %   \vspace{3pt}
+  %   Dipartimento di Informatica
+  % \end{minipage}
+  % \ifsansserif
+  % \hspace{14pt}%for theinhardt
+  % \else
+  % \hspace{20pt}%for guardian
+  % \fi
+  % \begin{minipage}[t]{60pt}
+  %   \vspace{10pt}
+  %   \textbf{Laboratorio LACAM}\par
+  %   \vspace{3pt}
+  %   Machine Learning
+  % \end{minipage}
+  % \hspace{28pt}
+  % \vspace{7pt}
+}
+
+
+
+\mode<all>

@@ -1,0 +1,103 @@
+% Beamer theme by antonio vergari <arranger1044[aT]aim[DoT]com>
+% based on the LaTeX-Beamer package
+% Part of the beamer theme spinaceto (based on my previous theme enziteto)
+% 
+% This program can be redistributed and/or modified under the terms
+% of the GNU Public License, version 3.
+% 
+%
+\ProvidesPackage{beamerthemespinaceto}[2018/12/25]
+
+\mode<presentation>
+
+%
+% Requirements
+
+% 
+% define custom variables for department, laboratory, research group
+% and logos
+\def\department#1{\gdef\@department{#1}}
+\def\laboratory#1{\gdef\@laboratory{#1}}
+\def\group#1{\gdef\@group{#1}}
+\def\institutelogo#1{\gdef\@institutelogo{#1}}
+\def\lablogo#1{\gdef\@lablogo{#1}}
+\def\institutesize#1{\gdef\@institutesize{#1}}
+%
+% for multiple affiliations
+\def\seconddepartment#1{\gdef\@seconddepartment{#1}}
+\def\secondlaboratory#1{\gdef\@secondlaboratory{#1}}
+\def\secondgroup#1{\gdef\@secondgroup{#1}}
+\def\secondinstitute#1{\gdef\@secondinstitute{#1}}
+\def\secondinstitutelogo#1{\gdef\@secondinstitutelogo{#1}}
+\def\secondlablogo#1{\gdef\@secondlablogo{#1}}
+\def\secondinstitutesize#1{\gdef\@secondinstitutesize{#1}}
+%
+\def\thirddepartment#1{\gdef\@thirddepartment{#1}}
+\def\thirdlaboratory#1{\gdef\@thirdlaboratory{#1}}
+\def\thirdgroup#1{\gdef\@thirdgroup{#1}}
+\def\thirdinstitute#1{\gdef\@thirdinstitute{#1}}
+\def\thirdinstitutelogo#1{\gdef\@thirdinstitutelogo{#1}}
+\def\thirdlablogo#1{\gdef\@thirdlablogo{#1}}
+\def\thirdinstitutesize#1{\gdef\@thirdinstitutesize{#1}}
+%
+\def\fourthdepartment#1{\gdef\@fourthdepartment{#1}}
+\def\fourthlaboratory#1{\gdef\@fourthlaboratory{#1}}
+\def\fourthgroup#1{\gdef\@fourthgroup{#1}}
+\def\fourthinstitute#1{\gdef\@fourthinstitute{#1}}
+\def\fourthinstitutelogo#1{\gdef\@fourthinstitutelogo{#1}}
+\def\fourthlablogo#1{\gdef\@fourthlablogo{#1}}
+\def\fourthinstitutesize#1{\gdef\@fourthinstitutesize{#1}}
+
+%
+% custom variables for authors, emails and affiliations
+\def\firstauthor#1{\gdef\@firstauthor{#1}}
+\def\firstauthoremail#1{\gdef\@firstauthoremail{#1}}
+\def\firstauthoraffil#1{\gdef\@firstauthoraffil{#1}}
+\def\firstauthorsize#1{\gdef\@firstauthorsize{#1}}
+%
+\def\secondauthor#1{\gdef\@secondauthor{#1}}
+\def\secondauthoremail#1{\gdef\@secondauthoremail{#1}}
+\def\secondauthoraffil#1{\gdef\@secondauthoraffil{#1}}
+\def\secondauthorsize#1{\gdef\@secondauthorsize{#1}}
+
+
+%
+% Settings:
+% spinaceto uses its own inner and outer theme
+% plus the sanpio color theme (for the lacam lilac variations)
+% and the Open Sans font
+\usefonttheme{openfonts}
+\useinnertheme{spinaceto}
+\useoutertheme{spinaceto}
+\usecolortheme{sanpio}
+
+
+%
+% uncomment these usepackage directives for loading from local
+% \usepackage{spinacetotheme/beamerinnerthemespinaceto}
+% \usepackage{spinacetotheme/beamerouterthemespinaceto}
+% \usepackage{spinacetotheme/beamercolorthemegallinule}
+% \usepackage{spinacetotheme/beamerfontthemeopenfonts}
+
+
+
+%
+% disabling navigation symbols
+\setbeamertemplate{navigation symbols}{}
+
+%
+% setting the borders for the blocks
+\setbeamertemplate{blocks}[rounded][shadow=false]
+
+%
+% setting spacing in header and footer
+\setbeamertemplate{section in head/foot shaded}[default][15]
+\setbeamertemplate{mini frame in other subsection}[default][15]
+
+%
+% nice big margins
+\setbeamersize{text margin left=35pt}
+\setbeamersize{text margin right=35pt}
+
+
+\mode<all>

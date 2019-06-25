@@ -1,0 +1,198 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.8 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\sortlist[entry]{nyt/global/}
+  \entry{Choi2017}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=CA}{%
+         family={Choi},
+         familyi={C\bibinitperiod},
+         given={Arthur},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=DA}{%
+         family={Darwiche},
+         familyi={D\bibinitperiod},
+         given={Adnan},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CADA1}
+    \strng{fullhash}{CADA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{booktitle}{Proceedings of ICML}
+    \field{pages}{825\bibrangedash 833}
+    \field{title}{On Relaxing Determinism in Arithmetic Circuits}
+    \field{year}{2017}
+  \endentry
+
+  \entry{Darwiche2009}{book}{}
+    \name{author}{1}{}{%
+      {{hash=DA}{%
+         family={Darwiche},
+         familyi={D\bibinitperiod},
+         given={Adnan},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Cambridge}%
+    }
+    \strng{namehash}{DA1}
+    \strng{fullhash}{DA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2009}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{title}{Modeling and Reasoning with Bayesian Networks}
+    \field{year}{2009}
+  \endentry
+
+  \entry{Peharz2014b}{incollection}{}
+    \name{author}{3}{}{%
+      {{hash=PR}{%
+         family={Peharz},
+         familyi={P\bibinitperiod},
+         given={Robert},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=GR}{%
+         family={Gens},
+         familyi={G\bibinitperiod},
+         given={Robert},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=DP}{%
+         family={Domingos},
+         familyi={D\bibinitperiod},
+         given={Pedro},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {LTPM}%
+    }
+    \strng{namehash}{PRGR+1}
+    \strng{fullhash}{PRGRDP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2014}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{booktitle}{Workshop on Learning Tractable Probabilistic Models}
+    \field{title}{Learning Selective Sum-Product Networks}
+    \field{year}{2014}
+  \endentry
+
+  \entry{Poon2011}{article}{}
+    \name{author}{2}{}{%
+      {{hash=PH}{%
+         family={Poon},
+         familyi={P\bibinitperiod},
+         given={Hoifung},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=DP}{%
+         family={Domingos},
+         familyi={D\bibinitperiod},
+         given={Pedro},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PHDP1}
+    \strng{fullhash}{PHDP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2011}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{title}{{Sum-Product Networks: a New Deep Architecture}}
+    \field{journaltitle}{UAI 2011}
+    \field{year}{2011}
+  \endentry
+
+  \entry{Rooshenas2014}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=RA}{%
+         family={Rooshenas},
+         familyi={R\bibinitperiod},
+         given={Amirmohammad},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=LD}{%
+         family={Lowd},
+         familyi={L\bibinitperiod},
+         given={Daniel},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RALD1}
+    \strng{fullhash}{RALD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2014}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{booktitle}{Proceedings of ICML 2014}
+    \field{title}{{Learning Sum-Product Networks with Direct and Indirect
+  Variable Interactions}}
+    \field{year}{2014}
+  \endentry
+
+  \entry{Vergari2016a}{article}{}
+    \name{author}{3}{}{%
+      {{hash=VA}{%
+         family={Vergari},
+         familyi={V\bibinitperiod},
+         given={Antonio},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=DN}{%
+         family={{Di Mauro}},
+         familyi={D\bibinitperiod},
+         given={Nicola},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=EF}{%
+         family={Esposito},
+         familyi={E\bibinitperiod},
+         given={Floriana},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{VADN+1}
+    \strng{fullhash}{VADNEF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2016}
+    \field{sortinit}{V}
+    \field{sortinithash}{V}
+    \field{title}{Visualizing and Understanding Sum-Product Networks}
+    \verb{url}
+    \verb https://arxiv.org/abs/1608.08266
+    \endverb
+    \field{journaltitle}{preprint arXiv}
+    \field{year}{2016}
+  \endentry
+\endsortlist
+\endinput

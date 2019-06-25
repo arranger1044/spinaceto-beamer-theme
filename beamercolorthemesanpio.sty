@@ -1,0 +1,121 @@
+% Beamer theme by antonio vergari <arranger1044[aT]aim[DoT]com>
+% based on the LaTeX-Beamer package
+% Part of the beamer theme spinaceto (based on my previous theme enziteto)
+% 
+% This program can be redistributed and/or modified under the terms
+% of the GNU Public License, version 3.
+%
+% 
+\ProvidesPackage{beamercolorthemesanpio}[2018/12/25]
+
+
+%
+% custom color palette
+%
+\definecolor{mpigreen} {RGB} {0, 129, 122}
+\definecolor{lacamlilac} {RGB} {107,93,153}
+\definecolor{lacamlilac2} {RGB} {93, 109, 152}
+\definecolor{lacamlightlilac} {RGB} {174, 166, 201}
+\definecolor{lacamdarklilac} {RGB} {51, 10, 102}
+\definecolor{lacamgold} {RGB} {255, 87, 0}
+
+\definecolor{lacamgreen} {RGB} {72, 175, 115}
+\definecolor{lacamgold5} {RGB} {255, 87, 0}
+\definecolor{violet} {RGB} {119, 111, 178}
+\definecolor{darkred} {HTML} {67000C}
+
+\definecolor{petroil2} {RGB} {36, 165, 175}
+\definecolor{petroil4} {RGB} {30, 132, 149}
+\definecolor{petroil6} {RGB} {23, 101, 115}
+
+\definecolor{gold2} {RGB} {255, 130, 0}
+\definecolor{gold4} {RGB} {250, 100, 0}
+\definecolor{gold6} {RGB} {245, 90, 0}
+
+\definecolor{tomato0} {HTML} {EF9A9A}
+\definecolor{tomato1} {HTML} {F44336}
+\definecolor{tomato2} {HTML} {E53935}
+\definecolor{tomato3} {HTML} {D32F2F}
+\definecolor{tomato4} {HTML} {C62828}
+\definecolor{tomato5} {HTML} {B71C1C}
+
+\definecolor{peas1} {HTML} {009688}
+\definecolor{peas2} {HTML} {00897B}
+\definecolor{peas3} {HTML} {00796B}
+\definecolor{peas4} {HTML} {00695C}
+\definecolor{peas5} {HTML} {004D40}
+
+\definecolor{bgrey0} {HTML} {78909C}
+\definecolor{bgrey1} {HTML} {607D8B}
+\definecolor{bgrey2} {HTML} {546E7A}
+\definecolor{bgrey3} {HTML} {455A64}
+\definecolor{bgrey4} {HTML} {37474F}
+\definecolor{bgrey5} {HTML} {263238}
+
+\definecolor{olive0} {HTML} {C5E1A5}
+\definecolor{olive1} {HTML} {AED581}
+\definecolor{olive2} {HTML} {9CCC65}
+\definecolor{olive3} {HTML} {8BC34A}
+\definecolor{olive4} {HTML} {7CB342}
+\definecolor{olive5} {HTML} {689F38}
+
+\definecolor{pink0} {HTML} {FCE4EC}
+\definecolor{pink1} {HTML} {F8BBD0}
+\definecolor{pink2} {HTML} {F48FB1}
+\definecolor{pink3} {HTML} {F06292}
+\definecolor{pink4} {HTML} {EC407A}
+\definecolor{pink5} {HTML} {FF80AB}
+
+\definecolor{brown0} {HTML} {D7CCC8}
+\definecolor{brown1} {HTML} {BCAAA4}
+\definecolor{brown2} {HTML} {A1887F}
+\definecolor{brown3} {HTML} {8D6E63}
+\definecolor{brown4} {HTML} {795548}
+\definecolor{brown5} {HTML} {6D4C41}
+\definecolor{brown6} {HTML} {5D4037}
+
+\definecolor{yellow0} {HTML} {CDDC39}
+\definecolor{yellow1} {HTML} {9E9D24}
+\definecolor{yellow3} {HTML} {FFBD2A}
+\definecolor{yellow4} {HTML} {FFB000}
+\definecolor{yellow5} {HTML} {FFD600}
+
+
+%
+% defining palettes
+\setbeamercolor{palette primary} {fg=black, bg=white}
+\setbeamercolor{palette secondary} {fg=lacamlilac, bg=white}
+\setbeamercolor{palette tertiary} {fg=lacamdarklilac, bg=white}
+\setbeamercolor{palette quaternary} {fg=lacamlightlilac, bg=white}
+
+%
+% coloring
+\setbeamercolor{background canvas}{parent=palette primary}
+
+\setbeamercolor{structure} {fg=black, bg=white}
+
+\setbeamercolor{title} {parent=structure}
+%\setbeamercolor{title page} {parent=structure}
+
+\setbeamercolor{subtitle} {parent=title}
+
+% \setbeamercolor{frametitle} {parent=palette secondary}
+\setbeamercolor{frametitle} {parent=palette tertiary}
+
+\setbeamercolor{mini frame}{parent=palette secondary}
+
+\setbeamercolor{section in head/foot} {parent=palette tertiary}
+\setbeamercolor{section page} {parent=palette tertiary}
+
+\setbeamercolor{alerted text}{fg=lacamgold!40!lacamlilac}
+
+\setbeamercolor{example text}{fg=lacamdarklilac!40!lacamgold}
+
+\setbeamercolor{block title} {fg=structure.fg, bg=lacamlightlilac}
+\setbeamercolor{block title alerted} {fg=alerted text.fg, bg=alerted text.fg!10!bg}
+\setbeamercolor{block title example} {fg=example text.fg, bg=example text.fg!10!bg}
+
+\setbeamercolor{block body} {fg=normal text.fg, bg=white}
+\setbeamercolor{block body alerted} {fg=normal text.fg, bg=alerted text.fg!10!bg}
+\setbeamercolor{block body example} {fg=normal text.fg, bg=example text.fg!10!bg}
+
