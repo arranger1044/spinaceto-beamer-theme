@@ -9,7 +9,7 @@
 \ProvidesPackage{beamerinnerthemespinaceto}[2018/12/25]
 
 \usepackage{biblatex}
-\usepackage{setspace}
+%\usepackage{setspace}
 
 \mode<presentation>
 
@@ -172,8 +172,8 @@
 
 % better spacing for footnotes
 \def \beamerfoottmplength {0.92\paperwidth}
-\addtobeamertemplate{footnotetext}{\vspace{-126pt}\advance\hsize-1.5cm}{\vspace{6pt}}
-\addtobeamertemplate{footnote}{\vspace{-126pt}\advance\hsize-1.5cm}{\vspace{6pt}}
+\addtobeamertemplate{footnotetext}{\vspace{-6pt}\advance\hsize-1.5cm}{\vspace{6pt}}
+\addtobeamertemplate{footnote}{\vspace{-6pt}\advance\hsize-1.5cm}{\vspace{6pt}}
 \addtobeamertemplate{footnote}{\hsize\beamerfoottmplength}{}
 \addtobeamertemplate{footnotetext}{\hsize\beamerfoottmplength}{}
 
@@ -186,14 +186,14 @@
 \makeatother
 
 
-% %
-% % custom citations
-% \setbeamerfont{footnote}{size=\scriptsize}
-% \newcommand{\customcite}[1]{\footnote{\tiny \citeauthor{#1},
-%     \citetitle{#1}, \citeyear{#1}}}
-% \newcommand{\customcitenomark}[1]{\footnotenomarkleft{\tiny
-%     \citeauthor{#1}, \citetitle{#1}, \citeyear{#1}}}
-% \newcommand{\customcitetext}[1]{\footnotenomarkleft{\tiny \citeauthor{#1}, \citetitle{#1}, \citeyear{#1}}}
+%
+% custom citations
+\setbeamerfont{footnote}{size=\scriptsize}
+\newcommand{\customcite}[1]{\footnote{\tiny \citeauthor{#1},
+    \citetitle{#1}, \citeyear{#1}}}
+\newcommand{\customcitenomark}[1]{\footnotenomarkleft{\tiny
+    \citeauthor{#1}, \citetitle{#1}, \citeyear{#1}}}
+\newcommand{\customcitetext}[1]{\footnotenomarkleft{\tiny \citeauthor{#1}, \citetitle{#1}, \citeyear{#1}}}
 
 \setbeamertemplate{bibliography item}{\hspace{10pt}\raise
   .2ex\hbox{\textcolor{lacamlilac}{$\boldsymbol{\oplus}$}}}
