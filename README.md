@@ -23,7 +23,7 @@ admin privileges) to copy the `.sty` files to your tex-mf dir.
 ## Examples
 To compile the examples of this repo into pdfs, `cd` into the examples dir and run `make`.
 
-More examples of my slides using `spinaceto` can be found [here](https://github.com/arranger1044/aaai19-abda-presgari/blob/master/presgari.pdf) and [here](https://github.com/arranger1044/antitesi-presgari/blob/master/presgari.pdf).
+More examples of my slides using `spinaceto` can be found [here](http://starai.cs.ucla.edu/slides/TPMTutorialUAI19.pdf) [here](https://github.com/arranger1044/aaai19-abda-presgari/blob/master/presgari.pdf) and [here](https://github.com/arranger1044/antitesi-presgari/blob/master/presgari.pdf).
 
 ## Why Spinaceto
 Traditionally, beamer themes are named after cities.
